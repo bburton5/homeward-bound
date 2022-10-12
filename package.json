@@ -1,0 +1,34 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.5",
+    "cookie-session": "^2.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "handlebars": "^4.7.7",
+    "mysql2": "^2.3.3",
+    "passport": "^0.6.0",
+    "sequelize": "^6.25.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "homeward-bound-project2",
+  "description": "- Git Repository: https://github.com/bburton5/homeward-bound - Google Doc: https://docs.google.com/document/d/1qcI-zFQWMMhXyoOIFpnMIpgOaaMMFAWef-j_jYiVvfY/edit#",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bburton5/homeward-bound.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bburton5/homeward-bound/issues"
+  },
+  "homepage": "https://github.com/bburton5/homeward-bound#readme"
+}
