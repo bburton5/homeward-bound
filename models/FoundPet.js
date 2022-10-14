@@ -13,7 +13,7 @@ FoundPet.init(
     },
     animal_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     animal_name: {
       type: DataTypes.STRING,
@@ -21,7 +21,7 @@ FoundPet.init(
     },
     animal_type: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     animal_age: {
       type: DataTypes.STRING,
@@ -37,15 +37,15 @@ FoundPet.init(
     },
     animal_color: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     found_on: {
       type: DataTypes.DATE,
-      allowNull: false,
+      allowNull: true,
     },
     found_at: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     image: {
       type: DataTypes.STRING,
@@ -53,7 +53,7 @@ FoundPet.init(
     },
     description: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
   },
   {
