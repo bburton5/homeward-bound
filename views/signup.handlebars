@@ -1,14 +1,126 @@
-<div>
-    <p>sign up</p>
-    <form class="signup-form">
-        <label for="username">username</label><br>
-        <input type="text" id="username-signup" name="username"><br>
-        <label for="password">password</label><br>
-        <input type="text" id="password-signup" name="password"><br>
-        <label for="email">email</label><br>
-        <input type="text" id="email-signup" name="email"><br>
-        <input type="submit" value="submit">
-    </form>
-</div>
+{{!-- nav from main layout --}}
 
+<section>
+
+    <div>
+        <div id="title-container">
+            <h1 id="title">Help Lost Pets <br> Find Their Way Home</h1>
+            <div id="paw-prints">   &#128062; <br> &nbsp; &nbsp;  &nbsp; &#x1F43E;</div>
+        </div>
+
+        <div id="form-container" >
+            <h1>Sign up</h1>
+            <p>Create an account to post a lost pet or share information</p>
+
+            <form class="signup-form">
+                <input type="text" id="username-signup" name="username" placeholder="username" ><br>
+                <input type="text" id="password-signup" name="password" placeholder="password"><br>
+                <input type="text" id="email-signup" name="email" placeholder="email"><br>
+                <input type="submit" value="submit">
+            </form>
+
+            <br>
+
+            <div id="dog-emoji">&#128021;</div>
+            <div id="cat-emoji">&#128008;</div>
+        </div>     
+    </div>
+
+    <p>go to help find lost pets page or my pet is lost page</p>
+
+</section>
 <script src="./js/signup.js"></script>
+
+
+{{!-- move to external css --}}
+<style>
+
+    section{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1{
+        font-size: 40px;
+    }
+
+    section div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #title{
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        padding-right: 5vh;
+    }
+
+    #title-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #form-container{
+        background-color: lightgrey;
+        height: 60vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        padding: 2vh;
+        text-align: center;
+    }
+    form{
+        height: 20vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    input{
+        padding: 15px;
+    }
+    input::placeholder{
+        font-size: 20px;
+    }
+
+    input[type=submit]{
+        background-color: gold;
+        border-color: gold;
+        font-size: 20px;
+    }
+
+    p{
+        text-align: center;
+        font-size: xx-large;
+    }
+
+    #dog-emoji{
+        width: 10%;
+        margin-left: 65%;
+        font-size: 40px;
+    }
+    #cat-emoji{
+        width: 10%;
+        margin-left: 25%;
+        font-size: 40px;
+    }
+
+    #paw-prints{
+        font-size: 40px;
+        transform: rotate(90deg);
+        margin-top: 50vh;
+    }
+
+    
+
+
+</style>

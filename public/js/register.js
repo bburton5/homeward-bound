@@ -8,5 +8,5 @@ const registerFunction = async(event) => {
 
 
 document
-  .querySelector(".register-form");
-  .addEventListener("submit", registerFunction)
+  .querySelector(".register-form")
+  .addEventListener("submit", registerFunction);
