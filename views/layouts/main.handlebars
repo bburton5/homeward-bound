@@ -10,26 +10,29 @@
 
 <body>
 
-      {{!-- if user is not signed in --}}
+{{!-- req.session.loggedIn  -  controllers/api/homeroutes.js/line 5 --}}
+ 
       <nav>
         <ul>
+          {{#if loggedIn}} {{!-- user is signed in --}}
           <li><a href="/"> Homeward Bound </a></li>
           <div>
-            <li><a class="active" href="/">Home</a></li>
-            <li><a href="/login">Login</a></li>
+            <a href="/"> Home </a>
+            <a href="/"> Help Find Lost Pets </a>
+            <a href="/"> My Pet Is Lost </a>
+            <a href="/"> Found and Returned </a>
+            <button id="logout" class=""> logout </button>
           </div>
+            
+          {{else}} {{!-- if user is not signed in --}}
+              <li><a href="/"> Homeward Bound </a></li>
+              <div>
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="/login">Login</a></li>
+              </div>
+          {{/if}}
         </ul>
       </nav>
-
-      {{!-- user is signed in --}}
-      {{!-- <nav>
-          <a href="/"> Home </a>
-          <a href="/"> Help Find Lost Pets </a>
-          <a href="/"> My Pet Is Lost </a>
-          <a href="/"> Found and Returned </a>
-          <button id="logout" class=""> logout </button>
-      </nav> --}}
-
 
     <main> 
       {{{ body }}}
