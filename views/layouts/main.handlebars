@@ -9,20 +9,81 @@
 </head>
 
 <body>
-  <header>
-    <h1>Homeward Bound</h1>
-    <nav>
-      <a href="/"> Home </a>
-        <a href="/login"> Login </a>
-        <button id="logout" class=""> logout </button>
-       </nav>
-  </header>
 
-<main> 
-  {{{ body }}}
-</main>
-  <script src="./js/logout.js"></script>
+      {{!-- if user is not signed in --}}
+      <nav>
+        <ul>
+          <li><a href="/"> Homeward Bound </a></li>
+          <div>
+            <li><a class="active" href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+          </div>
+        </ul>
+      </nav>
+
+      {{!-- user is signed in --}}
+      {{!-- <nav>
+          <a href="/"> Home </a>
+          <a href="/"> Help Find Lost Pets </a>
+          <a href="/"> My Pet Is Lost </a>
+          <a href="/"> Found and Returned </a>
+          <button id="logout" class=""> logout </button>
+      </nav> --}}
+
+
+    <main> 
+      {{{ body }}}
+    </main>
+
+    <script src="./js/logout.js"></script>
+
 </body>
 </html>
 
- 
+
+{{!-- move to external css --}}
+<style>
+
+  body{
+    background-color: lightblue;
+    margin: 0;
+  }
+  
+  ul {
+    list-style-type: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  li {
+    float: right;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: rgb(57, 57, 180);
+    color: white;
+  }
+
+</style>
