@@ -1,10 +1,8 @@
-const router = require('express').Router();
+const router = require("express").Router();
+const userRoutes = require("./userRoutes");
+const missingPetRoutes = require("./missingPetRoutes");
 
-const userRoutes = require('./user-routes');
-const missingPet = require('./missingPet-routes');
-
-router.use('/User', userRoutes);
-router.use('/newpost', missingPet);
-
+router.use("/users", userRoutes);
+router.use("/newpost", missingPetRoutes);
 
 module.exports = router;
