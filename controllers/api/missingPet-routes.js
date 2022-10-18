@@ -12,11 +12,26 @@ router.post('/newpost', async (req, res) => {
       date_lost: req.body.date_lost,
       contact_number: req.body.contact_number,
     });
-    console.log(missingPet,"in the try");
+    console.log(missingPetData,"in the try");
   } catch (err){
     res.status(500).json(err);
   }
-  console.log(missingPet,"out the try");
+  console.log(missingPetData,"out the try");
 }); 
+
+
+//GET all MissingPet
+router.get('/newpost', async (req, res) => {
+  try {
+  // Search the database for all 
+  const allMissingPets = await MissingPet.findAll()
+
+  res.json(allMissingPets);
+  } catch (err) {
+      res.status(500).json(err);
+  }
+});
+
+
 
 module.exports = router;
