@@ -31,6 +31,14 @@ router.get('/signup', (req, res) => {
   }
 });
 
+router.get('/newpost', (req, res) => {
+    try {
+        res.render('newpost')
+    } catch (err) {
+        console.log(err);
+    }
+  });
+
 
 
 
