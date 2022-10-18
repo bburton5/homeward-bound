@@ -32,7 +32,7 @@ MissingPet.init(
       allowNull: false,
     },
     date_lost: {
-      type: DataTypes.DATE,
+      type: DataTypes.INTEGER,
       allowNull: true,
     },
     contact_number: {

@@ -6,13 +6,10 @@
 
 <form class="newpost-form">
 <div class="itemBlock">
-<label for="animal-type">Animal type:</label>
-<select name="animal-type" id="animal-type">
-  <option value="select">Please Select</option>
-  <option value="dog">Dog</option>
-  <option value="cat">Cat</option>
-  <option value="other">Other</option>
-</select>
+  {{!-- <form class="user-input"> --}}
+    <label for="pet-name">Pet's name:</label><span class="optionalText">*</span>
+    <input type="text" id="pet-name" name="pet-name"><br><br>
+  {{!-- </form> --}}
 </div>
 
 <div class="itemBlock">
@@ -28,10 +25,8 @@
 </div>
 
 <div class="itemBlock">
-  {{!-- <form class="user-input"> --}}
-    <label for="microchip-type">Microchip number:<span>*</span></label>
-    <input type="text" id="microchip-type" name="microchip-type"><br><br>
-  {{!-- </form> --}}
+    <label for="image-type">Attach image:<span>*</span></label>
+    <input type="text" id="image-type" name="image-type"><br><br>
 </div>
 
 <div class="itemBlock">
@@ -54,6 +49,8 @@
     <input type="text" id="number-type" name="number-type"><br><br>
   {{!-- </form> --}}
 </div>
+
+
 
 <div class="submit">
   <button class="submit">Submit</button>

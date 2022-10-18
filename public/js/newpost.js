@@ -2,17 +2,18 @@ const newPostHandler = async (event) => {
   event.preventDefault();
   console.log("I pressed the submit button")
 
+  const petName = document.querySelector('#pet-name').value.trim();
   const petType = document.querySelector('#pet-type').value.trim();
   const description = document.querySelector('#description-text').value.trim();
-  const microchip = document.querySelector('#microchip-type').value.trim();
   const zipCode = document.querySelector('#zip-type').value.trim();
   const lastSeen = document.querySelector('#date-type').value.trim();
   const phNumber = document.querySelector('#number-type').value.trim();
-
-  if (petType && description && microchip && zipCode && lastSeen && phNumber) {
+  const image = document.querySelector('#image-type').value.trim();
+console.log(petName, petType, description, zipCode, lastSeen, phNumber, image);
+  if (petName && petType && description && zipCode && lastSeen && phNumber && image) {
     const response = await fetch('/api/newpost', {
       method: 'POST',
-      body: JSON.stringify({ petType, description, microchip, zipCode, lastSeen, phNumber }),
+      body: JSON.stringify({ petName, petType, description, zipCode, lastSeen, phNumber, image }),
       headers: { 'Content-Type': 'application/json' },
     });
 
