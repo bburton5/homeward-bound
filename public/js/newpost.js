@@ -2,17 +2,17 @@ const newPostHandler = async (event) => {
   event.preventDefault();
   console.log("I pressed the submit button")
 
-  const petType = document.querySelector('#pet-type').value.trim();
+  const pet_name = document.querySelector('#pet-name').value.trim();
+  const pet_type = document.querySelector('#pet-type').value.trim();
   const description = document.querySelector('#description-text').value.trim();
-  const microchip = document.querySelector('#microchip-type').value.trim();
-  const zipCode = document.querySelector('#zip-type').value.trim();
-  const lastSeen = document.querySelector('#date-type').value.trim();
-  const phNumber = document.querySelector('#number-type').value.trim();
+  const zip_code = document.querySelector('#zip-type').value.trim();
+  const date_lost = document.querySelector('#date-type').value.trim();
+  const contact_number = document.querySelector('#number-type').value.trim();
 
-  if (petType && description && microchip && zipCode && lastSeen && phNumber) {
+  if (pet_name && pet_type && description && zip_code && date_lost && contact_number) {
     const response = await fetch('/api/newpost', {
       method: 'POST',
-      body: JSON.stringify({ petType, description, microchip, zipCode, lastSeen, phNumber }),
+      body: JSON.stringify({ pet_name, pet_type, description, zip_code, date_lost, contact_number }),
       headers: { 'Content-Type': 'application/json' },
     });
 
@@ -20,7 +20,7 @@ const newPostHandler = async (event) => {
       document.location.replace('/');
       alert('You have submitted a missing pet!')
     } else {
-      alert('Please fill out all portions of this form');
+      alert('Your submission failed, please try again');
     }
   }
 };

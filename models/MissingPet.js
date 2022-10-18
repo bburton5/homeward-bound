@@ -23,20 +23,16 @@ MissingPet.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    image: {
+    zip_code: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    zip_code: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-    },
     date_lost: {
-      type: DataTypes.DATE,
+      type: DataTypes.STRING,
       allowNull: true,
     },
     contact_number: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: true,
     },
   },
@@ -44,7 +40,7 @@ MissingPet.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: "missingpet",
+    modelName: "MissingPet",
   }
 );
 

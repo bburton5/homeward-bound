@@ -6,13 +6,8 @@
 
 <form class="newpost-form">
 <div class="itemBlock">
-<label for="animal-type">Animal type:</label>
-<select name="animal-type" id="animal-type">
-  <option value="select">Please Select</option>
-  <option value="dog">Dog</option>
-  <option value="cat">Cat</option>
-  <option value="other">Other</option>
-</select>
+<label for="pet-name">pet name:</label>
+<textarea id="pet-name" name="pet-name" rows="3" cols="30"></textarea>
 </div>
 
 <div class="itemBlock">
@@ -27,12 +22,6 @@
   <textarea id="description-text" name="description" rows="3" cols="30"></textarea>
 </div>
 
-<div class="itemBlock">
-  {{!-- <form class="user-input"> --}}
-    <label for="microchip-type">Microchip number:<span>*</span></label>
-    <input type="text" id="microchip-type" name="microchip-type"><br><br>
-  {{!-- </form> --}}
-</div>
 
 <div class="itemBlock">
   {{!-- <form class="user-input"> --}}
