@@ -32,6 +32,7 @@ MissingPet.init(
       allowNull: false,
     },
     date_lost: {
+      // you will need to use a data pakcage like moment here
       type: DataTypes.DATE,
       allowNull: true,
     },

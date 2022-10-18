@@ -24,7 +24,7 @@ FoundPet.init(
       allowNull: false,
     },
     animal_age: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: true,
     },
     animal_gender: {
@@ -40,6 +40,7 @@ FoundPet.init(
       allowNull: false,
     },
     found_on: {
+      // moment
       type: DataTypes.DATE,
       allowNull: false,
     },
