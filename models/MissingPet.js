@@ -37,7 +37,7 @@ MissingPet.init(
     },
     contact_number: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
   },
   {

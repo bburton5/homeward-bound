@@ -1,0 +1,85 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>Report a lost pet</h2>
+  </div>
+</div>
+
+
+<div class="itemBlock">
+<label for="animal-type">Animal type:</label>
+<select name="animal-type" id="animal-type">
+  <option value="select">Please Select</option>
+  <option value="dog">Dog</option>
+  <option value="cat">Cat</option>
+  <option value="other">Other</option>
+</select>
+</div>
+
+<div class="itemBlock">
+  <form class="user-input">
+    <label for="pet-type">Breed:</label><span class="optionalText">*REQUIRED*</span>
+    <input type="text" id="pet-type" name="pet-type"><br><br>
+  </form>
+</div>
+
+<div class="itemBlock">
+  <label for="description">Description:</label><span class="optionalText">*REQUIRED*</span>
+  <textarea id="description-text" name="description" rows="4" cols="50"></textarea>
+</div>
+
+<div class="itemBlock">
+  <form class="user-input">
+    <label for="microchip-type">Microchip number:<span>*Optional*</span></label>
+    <input type="text" id="microchip-type" name="microchip-type"><br><br>
+  </form>
+</div>
+
+<div class="itemBlock">
+  <form class="user-input">
+    <label for="zip-type">Zip code:<span>*REQUIRED*</span></label>
+    <input type="text" id="zip-type" name="zip-type"><br><br>
+  </form>
+</div>
+
+<div class="itemBlock">
+  <form class="user-input">
+    <label for="date-type">Date last seen:<span>*Optional*</span></label>
+    <input type="text" id="date-type" name="date-type"><br><br>
+  </form>
+</div>
+
+<div class="itemBlock">
+  <form class="user-input">
+    <label for="number-type">Contact information:<span>*REQUIRED*</span></label>
+    <input type="text" id="number-type" name="number-type"><br><br>
+  </form>
+</div>
+
+
+{{!-- <div class="itemBlock">
+<label for="size-type">Size:</label>
+<select name="size-type" id="size-type">
+  <option value="select">Please Select</option>
+  <option value="toy-breed">Toy breed</option>
+  <option value="small">Small</option>
+  <option value="medium">Medium</option>
+  <option value="large">Large</option>
+  <option value="extra-large">Extra Large</option>
+</select>
+</div> --}}
+
+{{!-- <div class="itemBlock">
+  <form class="user-input">
+    <label for="color-type">Color:<span>*Optional*</span></label>
+    <input type="text" id="color-type" name="color-type"><br><br>
+  </form>
+</div> --}}
+
+{{!-- <div class="itemBlock">
+  <form class="user-input">
+    <label for="age-type">Approximate age:<span>*Optional*</span></label>
+    <input type="text" id="age-type" name="age-type"><br><br>
+  </form>
+</div> --}}
+
+<script src="./js/missingPetData.js"
