@@ -9,7 +9,7 @@
     "express-session": "^1.17.3",
     "handlebars": "^4.7.7",
     "mysql2": "^2.3.3",
-    "passport": "^0.6.0",
+    "node-emoji": "^1.11.0",
     "sequelize": "^6.25.0"
   },
   "scripts": {
@@ -19,7 +19,9 @@
   "description": "- Git Repository: https://github.com/bburton5/homeward-bound - Google Doc: https://docs.google.com/document/d/1qcI-zFQWMMhXyoOIFpnMIpgOaaMMFAWef-j_jYiVvfY/edit#",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bburton5/homeward-bound.git"
