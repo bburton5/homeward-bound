@@ -1,7 +1,35 @@
-<section class="card">
-    <h1>{{pet_name}}</h1><br>
-    <p>{{pet_type}}</p> <br>
-    <p>{{description}}</p> <br>
-    <p>{{date_lost}}</p> <br>
-    <p>{{contact_number}}</p> <br>
-</section>
+<div class="container">
+    <section class="card">
+        <h1>Missing Pet Name: {{pet_name}}</h1><br>
+        <p>Pet Type:{{pet_type}}</p> <br>
+        <p>Pet Description:{{description}}</p> <br>
+        <p>Date last seen:{{date_lost}}</p> <br>
+        <p>Owner Contact Info:{{contact_number}}</p> <br>
+    </section>
+</div>
+
+<style>
+    h1 {
+        color:blue;
+    }
+
+    .container{
+        display:flex;
+        flex-direction: row;
+        justify-content:flex-start
+        flex-wrap: wrap;
+    }
+
+    section{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+
+    }
+
+</style>
