@@ -31,11 +31,7 @@ MissingPet.init(
       defaultValue:"123123",
     },
     date_lost: {
-<<<<<<< HEAD
-      type: DataTypes.INTEGER,
-=======
       type: DataTypes.STRING,
->>>>>>> 01d47ed303b34e242b20cb0b08df2abc4fb73d3b
       allowNull: true,
       defaultValue:"2022-10-18",
     },

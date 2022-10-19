@@ -2,20 +2,6 @@ const newPostHandler = async (event) => {
   event.preventDefault();
   console.log("I pressed the submit button")
 
-<<<<<<< HEAD
-  const petName = document.querySelector('#pet-name').value.trim();
-  const petType = document.querySelector('#pet-type').value.trim();
-  const description = document.querySelector('#description-text').value.trim();
-  const zipCode = document.querySelector('#zip-type').value.trim();
-  const lastSeen = document.querySelector('#date-type').value.trim();
-  const phNumber = document.querySelector('#number-type').value.trim();
-  const image = document.querySelector('#image-type').value.trim();
-console.log(petName, petType, description, zipCode, lastSeen, phNumber, image);
-  if (petName && petType && description && zipCode && lastSeen && phNumber && image) {
-    const response = await fetch('/api/newpost', {
-      method: 'POST',
-      body: JSON.stringify({ petName, petType, description, zipCode, lastSeen, phNumber, image }),
-=======
   const pet_name = document.querySelector('#pet-name').value.trim();
   const pet_type = document.querySelector('#pet-type').value.trim();
   const description = document.querySelector('#description-text').value.trim();
@@ -27,7 +13,6 @@ console.log(petName, petType, description, zipCode, lastSeen, phNumber, image);
     const response = await fetch('/api/newpost', {
       method: 'POST',
       body: JSON.stringify({ pet_name, pet_type, description, zip_code, date_lost, contact_number }),
->>>>>>> 01d47ed303b34e242b20cb0b08df2abc4fb73d3b
       headers: { 'Content-Type': 'application/json' },
     });
 
