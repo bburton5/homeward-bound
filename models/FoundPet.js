@@ -11,10 +11,10 @@ FoundPet.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    animal_id: {
+   /* animal_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
-    },
+    },*/
     animal_name: {
       type: DataTypes.STRING,
       allowNull: true,
