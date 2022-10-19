@@ -13,23 +13,23 @@ MissingPet.init(
     },
     pet_name: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     pet_type: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     description: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     image: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: true,
     },
     zip_code: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
     },
     date_lost: {
       type: DataTypes.INTEGER,

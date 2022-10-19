@@ -1,14 +1,21 @@
 const sequelize = require("../config/connection");
-const { MissingPet } = require("../models");
+const { User, MissingPet } = require("../models");
 
+const userData = require("./userData.json");
 const missingPetData = require("./missingPetData.json");
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
-  for (const missingpet of missingPetData) {
+  const users = await User.bulkCreate(userData, {
+    individualHooks: true,
+    returning: true,
+  });
+
+  for (const missingPet of missingPetData) {
     await MissingPet.create({
-      ...missingpet,
+      ...missingPet,
+      user_id: users[Math.floor(Math.random() * users.length)].id,
     });
   }
 
