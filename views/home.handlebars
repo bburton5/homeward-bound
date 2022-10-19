@@ -1,7 +1,7 @@
 
-<body>
+{{>missingPetPost}}
 
-     <h1>Home</h1>
-     <p>thank you for signing in</p>
+{{#each allMissingPets as |MissingPet|}}
+     {{>missingPetPost MissingPet}}
+{{/each}}
 
-</body>
