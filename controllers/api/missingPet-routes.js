@@ -4,12 +4,7 @@ const emoji = require("node-emoji");
 
 router.post("/", async (req, res) => {
   try {
-<<<<<<< HEAD
-    console.log("in try");
-    const missingPetData = await MissingPet.create ({
-=======
     const missingPetData = await MissingPet.create({
->>>>>>> ae83725836a6affa704e38176f4c395cc78a68c0
       pet_name: req.body.pet_name,
       pet_type: req.body.pet_type,
       description: req.body.description,
