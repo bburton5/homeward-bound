@@ -6,8 +6,8 @@
 
 <form class="newpost-form">
 <div class="itemBlock">
-<label for="pet-name">pet name:</label>
-<textarea id="pet-name" name="pet-name" rows="3" cols="30"></textarea>
+<label for="pet-name">Pet name:</label><span class="optionalText">*</span>
+<textarea id="pet-name" name="pet-name" rows="1" cols="15"></textarea>
 </div>
 
 <div class="itemBlock">
@@ -22,6 +22,10 @@
   <textarea id="description-text" name="description" rows="3" cols="30"></textarea>
 </div>
 
+<div class="itemBlock">
+    <label for="image-type">Attach image:<span>*</span></label>
+    <input type="text" id="image-type" name="image-type"><br><br>
+</div>
 
 <div class="itemBlock">
   {{!-- <form class="user-input"> --}}
@@ -44,10 +48,36 @@
   {{!-- </form> --}}
 </div>
 
+
+
 <div class="submit">
   <button class="submit">Submit</button>
 </div>
 </form>
+
+<style>
+  .itemBlock{
+    width:55%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin:auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+
+  .submit{
+    width:30%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin:auto;
+  }
+
+  span{
+    color:rgb(248, 85, 85);
+  }
+</style>
 
 
 
